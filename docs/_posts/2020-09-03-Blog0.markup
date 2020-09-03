@@ -1,7 +1,99 @@
 ---
 layout: post
-title:  "Blog 0"
+title:  "Blog 0 - How to install LAMP Stack with Wordpress"
 date:   2020-09-03 15:59:25 -0700
 categories: jekyll update
 ---
-Hello World!
+To install LAMP stack
+First, Install apache2
+		$ sudo apt-get install apache2
+    then start apahce2
+        $ service apache2 start
+        Using Apache2 service command to start/stop/restart/status
+		    $ service apache2 command
+            Command options -- start, stop, restart, status
+
+    Location of apache2 file
+        /etc/apache2 - for apache2 config
+        /var/www/html - for web server file (how the website will look like)
+	
+    Checking the web server is running with apache2 by 
+        Enter address http://localhost
+        Enter address of your Raspberry pi IP address 
+			$ hostname -I 
+
+
+Second, Install php
+	    $ sudo apt-get install php -y
+	    Test PHP
+			$ cd /var/www/html
+			$ sudo nano index.php
+        Type in -> <?php echo “hello world”; ?> 
+            $ sudo rm index.html
+            $ service apache2 restart
+
+    Checking the web server is running with php by
+		Enter address http://localhost
+
+
+Third, Install Mysql
+	    $ sudo apt-get install mariadb-server php-mysql -y
+
+    Troubleshooting 
+    For some reason apt-get install mysql-server is doesn’t work
+
+
+Fourth, Install Wordpress 
+		$ cd /var/www/html
+		$ sudo rm *
+		$ sudo wget http://wordpress.org/latest.tar.gz
+		$ sudo tar xzf latest.tar.gz
+		$ sudo mv wordpress/* .
+		$ sudo rm -rf wordpress latest.tar.gz
+		$ tress -L 1 		// to see all the contents of a WordPress
+		$ sudo chown -R www-data: . 
+    
+    Set up your WordPress Database
+			$ sudo mysql_secure_installation
+
+        You will be asked Enter current password for root (enter for none): — press Enter.
+            - Type in Y and press Enter to Set root password?.
+            - Type in a password at the New password: prompt, and press Enter. Important: remember this root password, as you will need it later to set up WordPress.
+            - Type in Y to Remove anonymous users.
+            - Type in Y to Disallow root login remotely.
+            - Type in Y to Remove test database and access to it.
+            - Type in Y to Reload privilege tables now.
+        When complete, you will see the message All done! and Thanks for using MariaDB!.
+
+	    Create the WordPress database
+
+			$ sudo mysql -uroot -p
+			
+            This will log you inside of the mysql database
+			    Enter the password that you created earlier 
+			    $ CREATE DATABASE wordpress;
+                $ GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost' IDENTIFIED BY 'YOURPASSWORD';
+            For change to take effect, you will need to flush the database privileges
+                $ FLUSH PRIVILEGES;
+            
+            Exit the database ctrl+D 
+
+
+Lastly, WordPress Configuration  
+		Enter address http://localhost
+        You will need to setup-configuration such as language, etc
+        
+        Once you see Welcome to Wordpress page then click "Let's go!"
+
+        Now fill out the basic site information as follows:
+            Database Name:	wordpress
+            User Name:		root
+            Password:		<YOUR PASSWORD>
+            Database Host:	localhost
+            Table Prefix:		wp_
+		Click Submit
+		Click Run the install button
+
+To login as Admin 
+Enter http://localhost/wp-admin
+		
