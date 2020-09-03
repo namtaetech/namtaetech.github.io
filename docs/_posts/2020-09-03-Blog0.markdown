@@ -2,14 +2,15 @@
 layout: post
 title:  "Blog 0 - How to install LAMP Stack with Wordpress"
 date:   2020-09-03 15:59:25 -0700
-categories: jekyll update
+categories: jekyll blogs
+auther: "Namtae"
 ---
-To install LAMP stack
+
 First, Install apache2
 
 		$ sudo apt-get install apache2
 
-    then start apahce2
+    Then start apahce2
 
         $ service apache2 start
 
@@ -27,15 +28,14 @@ First, Install apache2
     Checking the web server is running with apache2 by 
         Enter address http://localhost
         Enter address of your Raspberry pi IP address 
-			$ hostname -I 
+		$ hostname -I 
 
 
 Second, Install php
 
 	    $ sudo apt-get install php -y
 
-	    Test PHP
-
+	Test PHP
 			$ cd /var/www/html
 			$ sudo nano index.php
         Type in -> <?php echo “hello world”; ?> 
@@ -63,7 +63,7 @@ Fourth, Install Wordpress
     
     Set up your WordPress Database
 
-			$ sudo mysql_secure_installation
+		$ sudo mysql_secure_installation
 
         You will be asked Enter current password for root (enter for none): — press Enter.
             - Type in Y and press Enter to Set root password?.
@@ -74,9 +74,9 @@ Fourth, Install Wordpress
             - Type in Y to Reload privilege tables now.
         When complete, you will see the message All done! and Thanks for using MariaDB!.
 
-	    Create the WordPress database
-        
-			$ sudo mysql -uroot -p
+	Create the WordPress database
+
+		$ sudo mysql -uroot -p
 			
             This will log you inside of the mysql database
 			    Enter the password that you created earlier 
@@ -89,8 +89,10 @@ Fourth, Install Wordpress
 
 
 Lastly, WordPress Configuration  
-		Enter address http://localhost
-        You will need to setup-configuration such as language, etc
+		
+        Enter address http://localhost
+        
+    You will need to setup-configuration such as language, etc
         
         Once you see Welcome to Wordpress page then click "Let's go!"
 
@@ -104,5 +106,6 @@ Lastly, WordPress Configuration
 		Click Run the install button
 
 To login as Admin 
+
 Enter http://localhost/wp-admin
 		
