@@ -6,14 +6,21 @@ categories: jekyll update
 ---
 To install LAMP stack
 First, Install apache2
+
 		$ sudo apt-get install apache2
+
     then start apahce2
+
         $ service apache2 start
+
         Using Apache2 service command to start/stop/restart/status
+
 		    $ service apache2 command
+
             Command options -- start, stop, restart, status
 
     Location of apache2 file
+
         /etc/apache2 - for apache2 config
         /var/www/html - for web server file (how the website will look like)
 	
@@ -24,8 +31,11 @@ First, Install apache2
 
 
 Second, Install php
+
 	    $ sudo apt-get install php -y
+
 	    Test PHP
+
 			$ cd /var/www/html
 			$ sudo nano index.php
         Type in -> <?php echo “hello world”; ?> 
@@ -37,13 +47,11 @@ Second, Install php
 
 
 Third, Install Mysql
+
 	    $ sudo apt-get install mariadb-server php-mysql -y
 
-    Troubleshooting 
-    For some reason apt-get install mysql-server is doesn’t work
-
-
 Fourth, Install Wordpress 
+
 		$ cd /var/www/html
 		$ sudo rm *
 		$ sudo wget http://wordpress.org/latest.tar.gz
@@ -54,6 +62,7 @@ Fourth, Install Wordpress
 		$ sudo chown -R www-data: . 
     
     Set up your WordPress Database
+
 			$ sudo mysql_secure_installation
 
         You will be asked Enter current password for root (enter for none): — press Enter.
@@ -66,7 +75,7 @@ Fourth, Install Wordpress
         When complete, you will see the message All done! and Thanks for using MariaDB!.
 
 	    Create the WordPress database
-
+        
 			$ sudo mysql -uroot -p
 			
             This will log you inside of the mysql database
