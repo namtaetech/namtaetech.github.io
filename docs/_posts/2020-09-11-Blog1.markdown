@@ -5,3 +5,49 @@ date:   2020-09-11 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+
+Reverse SSH is similar to regular SSH but it is a technique through which you can access systems that are behind a firewall from the outside world.
+
+My server machine is 192.168.1.166
+My client machine is 192.168.1.126
+
+
+At server machine 
+Create public key
+    <code>$ ssh-keygen </code>
+- enter all the way thru to use default setting
+- The location of the file is /root/.ssh -> id_rsa.pub
+
+    <code>$ cd /root/.ssh</code>
+    <code>$ ssh-copy-id -i id_rsa.pub user@client_ip_addree </code>
+
+
+*make sure open port for communication 22 and selected port
+*make sure the raspberry run openssh-server
+	
+Check file /etc/ssh/sshd_config on 
+AllowAgentForwarding yes
+AllowTcpForwarding yes
+GatewayPorts yes
+X11Forwarding yes 
+
+Open a port on your router to have 22 direct to server machine 
+Go on your router setting 
+
+
+At client Machine
+Using
+    <code>$ ssh -R 2222:localhost:22 user@IP_addr_server (or Public IP) </code>
+
+At	2222	- is a port as your desire but make sure at the server you also open this port on the machine 
+At 	22	- we usually not change because we are using this port for ssh
+At 	user	- is the user of the machine that you want to ssh to
+  
+
+
+After setting 
+At the server machine 
+Using cmd 
+    <code>$ ssh -l pi -p 2222 localhost </code>
+At	pi	- is the user of client (126) 
+At	2222	- is the port that you set to have reverse tunnel going thru
