@@ -14,8 +14,6 @@ Reverse SSH is similar to regular SSH but it is a technique through which you ca
     <li>Enter all the way thru to use default setting</li>
     <li>The location of the file is <code>/root/.ssh</code></li>
 </ul>
-
-    <code>$ cd /root/.ssh</code>
 <p> After create ssh-key on the Raspberry Pi or Server, we need to copy the key and provide to client machine by using ssh-copy-id method </p>
 
 $ ssh-copy-id -i id_rsa.pub user@client_ip_addree
