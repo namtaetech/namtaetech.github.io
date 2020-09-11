@@ -9,15 +9,15 @@ auther: "Namtae"
 Reverse SSH is similar to regular SSH but it is a technique through which you can access systems that are behind a firewall from the outside world.
 
 <h1>1. At server machine (Raspberry Pi)</h1>
-<p>Create public key </p>
-    <code>$ ssh-keygen </code>
+<p>Create public key <code>$ ssh-keygen </code></p>
 <ul>
     <li>Enter all the way thru to use default setting</li>
-    <li>The location of the file is /root/.ssh -> id_rsa.pub</li>
+    <li>The location of the file is <code>/root/.ssh</code></li>
 </ul>
+
     <code>$ cd /root/.ssh</code>
 <p> After create ssh-key on the Raspberry Pi or Server, we need to copy the key and provide to client machine by using ssh-copy-id method </p>
-    <code>$ ssh-copy-id -i id_rsa.pub user@client_ip_addree </code>
+    <code> $ ssh-copy-id -i id_rsa.pub user@client_ip_addree </code>
 <ul>
     <li>make sure open port for communication 22 and selected port</li>
     <li>make sure the raspberry run openssh-server</li>
@@ -37,7 +37,7 @@ Reverse SSH is similar to regular SSH but it is a technique through which you ca
 
 <h1>2. At client Machine</h1>
 <p> Making the connecting to Server Machine </p>
-    <code>$ ssh -R 2222:localhost:22 user@server_ip_addr</code>
+    <code> $ ssh -R 2222:localhost:22 user@server_ip_addr </code>
 <ul>    
     <li>At server_ip_address 
     - if it's the same network, you can you the <code>private IP Address</code>
