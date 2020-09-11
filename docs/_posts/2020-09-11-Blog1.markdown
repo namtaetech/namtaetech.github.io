@@ -16,7 +16,7 @@ Reverse SSH is similar to regular SSH but it is a technique through which you ca
 </ul>
 <p> After create ssh-key on the Raspberry Pi or Server, we need to copy the key and provide to client machine by using ssh-copy-id method </p>
 
-$ ssh-copy-id -i id_rsa.pub user@client_ip_addree
+<p><code>$ ssh-copy-id -i id_rsa.pub user@client_ip_addree</code></p>
 
 <ul>
     <li>make sure open port for communication 22 and selected port</li>
@@ -38,7 +38,7 @@ $ ssh-copy-id -i id_rsa.pub user@client_ip_addree
 <h1>2. At client Machine</h1>
 <p> Making the connecting to Server Machine </p>
 
-$ ssh -R 2222:localhost:22 user@server_ip_addr
+<p><code>$ ssh -R 2222:localhost:22 user@server_ip_addr</code></p>
 
 <ul>    
     <li>At <code>server_ip_address</code> 
