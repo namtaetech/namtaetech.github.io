@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 1 - How to setup reverse SSH"
+title:  "Blog 1 - How to setup reverse SSH on Raspberry Pi"
 date:   2020-09-11 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
@@ -8,46 +8,48 @@ auther: "Namtae"
 
 Reverse SSH is similar to regular SSH but it is a technique through which you can access systems that are behind a firewall from the outside world.
 
-My server machine is 192.168.1.166
-My client machine is 192.168.1.126
-
-
-At server machine 
-Create public key
+<h1>1. At server machine (Raspberry Pi)</h1>
+<p>Create public key </p>
     <code>$ ssh-keygen </code>
-- enter all the way thru to use default setting
-- The location of the file is /root/.ssh -> id_rsa.pub
-
+<ul>
+    <li>Enter all the way thru to use default setting</li>
+    <li>The location of the file is /root/.ssh -> id_rsa.pub</li>
+</ul>
     <code>$ cd /root/.ssh</code>
+<p> After create ssh-key on the Raspberry Pi or Server, we need to copy the key and provide to client machine by using ssh-copy-id method </p>
     <code>$ ssh-copy-id -i id_rsa.pub user@client_ip_addree </code>
+<ul>
+    <li>make sure open port for communication 22 and selected port</li>
+    <li>make sure the raspberry run openssh-server</li>
+</ul>
+<p> We can check the the config file of ssh by navigate to  
+    Check file <code>/etc/ssh/sshd_config</code> and make sure the config look like down below </p>
+<ul>
+    <li>AllowAgentForwarding yes</li>
+    <li>AllowTcpForwarding yes </li>
+    <li>GatewayPorts yes</li>
+    <li>X11Forwarding yes </li>
+</ul>
+
+<p>Open a port on your router to have 22 direct to server machine by go to your router setting</p>
 
 
-*make sure open port for communication 22 and selected port
-*make sure the raspberry run openssh-server
-	
-Check file /etc/ssh/sshd_config on 
-AllowAgentForwarding yes
-AllowTcpForwarding yes
-GatewayPorts yes
-X11Forwarding yes 
 
-Open a port on your router to have 22 direct to server machine 
-Go on your router setting 
-
-
-At client Machine
-Using
-    <code>$ ssh -R 2222:localhost:22 user@IP_addr_server (or Public IP) </code>
-
-At	2222	- is a port as your desire but make sure at the server you also open this port on the machine 
-At 	22	- we usually not change because we are using this port for ssh
-At 	user	- is the user of the machine that you want to ssh to
-  
-
-
-After setting 
-At the server machine 
-Using cmd 
-    <code>$ ssh -l pi -p 2222 localhost </code>
-At	pi	- is the user of client (126) 
-At	2222	- is the port that you set to have reverse tunnel going thru
+<h1>2. At client Machine</h1>
+<p> Making the connecting to Server Machine </p>
+    <code>$ ssh -R 2222:localhost:22 user@server_ip_addr</code>
+<ul>    
+    <li>At server_ip_address 
+    - if it's the same network, you can you the <code>private IP Address</code>
+    - if it's not in the same network, we are using <code>public IP address</code> </li>
+    <li>At	2222	- is a port as your desire but make sure at the server you also open this port on the machine</li>
+    <li>At 	22	- we usually not change because we are using this port for ssh</li>
+    <li>At 	user	- is the user of the machine that you want to ssh to</li>
+</ul>
+<h1>After setting </h1>
+<h2>At the server machine </h2>
+<p>Type in <code>$ ssh -l pi -p 2222 localhost </code> </p>
+<ul>
+    <li>At	pi	- is the user of client</li> 
+    <li>At	2222	- is the port that you set to have reverse tunnel going thru </li>
+</ul>
