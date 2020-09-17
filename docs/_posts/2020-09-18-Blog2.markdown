@@ -29,8 +29,10 @@ auther: "Namtae"
         <li>Black Box - testing similar to black hat hacker, who has no prio knowledge of the target system and network.</li>
         <li>White Box - penetration testers are given full knowledge of the system or network. This knowledge allows them to tear apart subtke security issues on behalf of their client.</li>
         <li>Grey Box - testing preformed by the in-house system or network administrator. </li>
-
     </ul>
+    <h4>Legal Disclaimer</h4>
+    <p>Gathering information about a person or organization using the public domain is legal. Attempting to gain access to systems that do not belong to you or you do not have permission to access is illegal, and a potential felony. For example, performing any of the following acts without the specific, written permission of the system's owner would be considered a felony: Port scans, Brute force attacks,Social engineering.</p>
+
     
     </body>
 </html>
