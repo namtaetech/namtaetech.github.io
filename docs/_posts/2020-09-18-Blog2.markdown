@@ -16,6 +16,6 @@ auther: "Namtae"
         <li>Maintaining your access</li>
         <li>Covering your tracks</li>
     </ol>
-    <img src="https://www.eccouncil.org/wp-content/uploads/2019/02/PENETRATION-TESTING-STAGES.png" alt="Pen testing stages">
+    <img src="docs\_posts\pictures\The-five-stages-of-penetration-testing.jpg" alt="Pen testing stages">
     </body>
 </html>
