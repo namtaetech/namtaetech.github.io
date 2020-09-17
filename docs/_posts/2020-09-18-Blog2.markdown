@@ -11,11 +11,26 @@ auther: "Namtae"
     <h3>An engagement consists of 5 stages</h3>
     <ol>
         <li>Active and Passive reconnaissance</li>
+            <p> This stage is the first step that we are gathering information about the target. </p>
         <li>Scanning enumeration</li>
+            <p> This stage is the second step that we are scannning network to find vulnerabilities.</p>
         <li>Gaining access</li>
+            <p> After we found posible way to get in we start gaining access through exploitation </p>
         <li>Maintaining your access</li>
+            <p> After we are able to gain access we need to maintaine the access to be ale have long duration in the affected system in order to steal sensitive information or spead insode the network by the vulnerabilty is used as a persisten presence.</p>
         <li>Covering your tracks</li>
+            <p>After we are able to gain access we need to cover our track, so the target will not be able to kick us out of the system and patch the hole.</p>
     </ol>
-    <img src="docs\_posts\pictures\The-five-stages-of-penetration-testing.jpg" alt="Pen testing stages">
+    <!-- <img src="C:\Users\namtaetea\Desktop\namtaetech.github.io\docs\_posts\pictures\The-five-stages-of-penetration-testing.jpg">
+    <cite>https://www.eccouncil.org/ethical-hacking/</cite>
+    -->
+    <h3>Type of Penetration Testing </h3>
+    <ul>
+        <li>Black Box - testing similar to black hat hacker, who has no prio knowledge of the target system and network.</li>
+        <li>White Box - penetration testers are given full knowledge of the system or network. This knowledge allows them to tear apart subtke security issues on behalf of their client.</li>
+        <li>Grey Box - testing preformed by the in-house system or network administrator. </li>
+
+    </ul>
+    
     </body>
 </html>
