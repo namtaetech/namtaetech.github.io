@@ -7,5 +7,6 @@ auther: "Namtae"
 ---
 <html>
     <body>
+    <h2>Penetration</h2> is the offensive security practice of attacking a network using the same techniques that a hacker would use, in an effort to identify security holes and raise awareness in an organization. The scope and purpose of an engagement is need to be discussed before the penetration test in pre-engagement interaction between organization and the pen testing team
     </body>
 </html>
