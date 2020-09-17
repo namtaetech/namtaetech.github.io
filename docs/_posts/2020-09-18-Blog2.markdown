@@ -7,6 +7,15 @@ auther: "Namtae"
 ---
 <html>
     <body>
-    <p>Penetration is the offensive security practice of attacking a network using the same techniques that a hacker would use, in an effort to identify security holes and raise awareness in an organization. The scope and purpose of an engagement is need to be discussed before the penetration test in pre-engagement interaction between organization and the pen testing team</p>
+    <p>Penetration is the offensive security practice of attacking a network using the same techniques that a hacker would use, in an effort to identify security holes and raise awareness in an organization. The scope and purpose of an engagement is need to be discussed before the penetration test in pre-engagement interaction between organization and the pen testing team.</p>
+    <h3>An engagement consists of 5 stages</h3>
+    <ol>
+        <li>Active and Passive reconnaissance</li>
+        <li>Scanning enumeration</li>
+        <li>Gaining access</li>
+        <li>Maintaining your access</li>
+        <li>Covering your tracks</li>
+    </ol>
+    <img src="https://www.eccouncil.org/wp-content/uploads/2019/02/PENETRATION-TESTING-STAGES.png" alt="Pen testing stages">
     </body>
 </html>
