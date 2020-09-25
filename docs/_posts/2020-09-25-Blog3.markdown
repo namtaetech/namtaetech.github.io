@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Blog 3 - Cryptography"
+date:   2020-09-18 11:59:25 -0700
+categories: jekyll blogs
+auther: "Namtae"
+---
