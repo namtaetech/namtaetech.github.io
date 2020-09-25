@@ -1,17 +1,27 @@
 ---
 layout: post
-title:  "Blog 3 - Cryptography"
+title:  "Blog 3 - GRC Framework "
 date:   2020-09-25 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
 <html>
     <body>
-        <p>Crytography is the art and science of keeping information secure through the use of mathematical concepts and techniques.</p>
-        <h3>The history of Crytography</h3>
-        <p>Cryptography is the use of codes and ciphers to protect secrets, it began thousands of years ago in early human civilizations which engaged in battles, politics, and fights for supremacy. Individuals neededto find methods to communicate securely with each other and keep their communications hidden from enemies.</p>
-        <h3>Caesar Ciper</h3>
-        <p>One of the earliest methods of cryptograpgy is the <b>Caesar Cipher</b>, Julius Caesar, a Roman general, needed a method for communicating securely with his military. He developed a method for hiding his communications, which later came to be known as th e Caesar Cipher.</p>
-        <p>The <code>Caesar cipher</code> is a method of encryption - a process of modifying a message or in formation to prevent unauthorized parties from accessing it.</p>
+        <h2>Governance, Risk managment, and Compliance (GRC)</h2>
+        <p>One of the goals of GRC is the term covering an organization to provide a framework for answering the questions: What assets are most important? and What is adequate protection? In particular:</p>
+        <ul>
+            <li><b>Risk Management</b> helps an organization identify which assets are most important and determine how they are most likely to be compromised. The business then uses this information to decide how to protect its most important and at-risk assets. This decision then informs the business's security practices.</li>
+            <li><b>Governance</b> provides management frameworks for implementing these security practices in the organization. It helps a business decide how to enforce its security practices by developing policies, standards, processes, and procedures.</li>
+            <li><b>Compliance</b> focuses on ensuring internal security policies are being followed, and verifying that the business is following relevant security laws.</li>
+        </ul>
+        <p>For example;</p>
+        <p><b>First</b>, An organization may perform a risk assessment and conclude that a new feature could lead to a 25% increase in quarterly profits, but will also expose an isolated data server that contains customer names, usernames, and email addresses, but no other PII.<p>
+        <p><b>Then</b>, The security team might object to the feature because it is insecure. But, the business might decide that dealing with a breach of an isolated server with no truly confidential information would cost less than the amount of profit they would make by building the feature.</p>
+
+        <p>In this case, the business objective of meeting profit targets overrides the risks in the strategy.</p>
+
+        <p>However, if the feature exposed a core data server that contained customer social security numbers and credit card numbers, the business might decide that the feature isn't worth the risk to its customers' privacy or the cost of violating federal laws that mandate the careful protection of this data.</p>
+
+        <p>After making a decision, the business would update its security practices to manage the risk they've chosen to undertake and periodically verify that everyone is following the rules. This is where governance and compliance kick in.</p
     </body>
 </html>
