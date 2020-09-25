@@ -1,7 +1,17 @@
 ---
 layout: post
 title:  "Blog 3 - Cryptography"
-date:   2020-09-18 11:59:25 -0700
+date:   2020-09-25 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<html>
+    <body>
+        <p>Crytography is the art and science of keeping information secure through the use of mathematical concepts and techniques.</p>
+        <h2>The history of Crytography</h2>
+        <p>Cryptography is the use of codes and ciphers to protect secrets, it began thousands of years ago in early human civilizations which engaged in battles, politics, and fights for supremacy. Individuals neededto find methods to communicate securely with each other and keep their communications hidden from enemies.</p>
+        <h2>Caesar Ciper</h2>
+        <p>One of the earliest methods of cryptograpgy is the <b>Caesar Cipher</b>, Julius Caesar, a Roman general, needed a method for communicating securely with his military. He developed a method for hiding his communications, which later came to be known as th e Caesar Cipher.</p>
+
+    </body>
+</html>
