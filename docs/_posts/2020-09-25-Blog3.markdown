@@ -18,10 +18,10 @@ auther: "Namtae"
         <p><b>First</b>, An organization may perform a risk assessment and conclude that a new feature could lead to a 25% increase in quarterly profits, but will also expose an isolated data server that contains customer names, usernames, and email addresses, but no other PII.<p>
         <p><b>Then</b>, The security team might object to the feature because it is insecure. But, the business might decide that dealing with a breach of an isolated server with no truly confidential information would cost less than the amount of profit they would make by building the feature.</p>
 
-        <p>In this case, the business objective of meeting profit targets overrides the risks in the strategy.</p>
+<p>In this case, the business objective of meeting profit targets overrides the risks in the strategy.</p>
 
-        <p>However, if the feature exposed a core data server that contained customer social security numbers and credit card numbers, the business might decide that the feature isn't worth the risk to its customers' privacy or the cost of violating federal laws that mandate the careful protection of this data.</p>
+<p>However, if the feature exposed a core data server that contained customer social security numbers and credit card numbers, the business might decide that the feature isn't worth the risk to its customers' privacy or the cost of violating federal laws that mandate the careful protection of this data.</p>
 
-        <p>After making a decision, the business would update its security practices to manage the risk they've chosen to undertake and periodically verify that everyone is following the rules. This is where governance and compliance kick in.</p
-    </body>
+<p>After making a decision, the business would update its security practices to manage the risk they've chosen to undertake and periodically verify that everyone is following the rules. This is where governance and compliance kick in.</p>
+</body>
 </html>
