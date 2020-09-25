@@ -8,10 +8,10 @@ auther: "Namtae"
 <html>
     <body>
         <p>Crytography is the art and science of keeping information secure through the use of mathematical concepts and techniques.</p>
-        <h2>The history of Crytography</h2>
+        <h3>The history of Crytography</h3>
         <p>Cryptography is the use of codes and ciphers to protect secrets, it began thousands of years ago in early human civilizations which engaged in battles, politics, and fights for supremacy. Individuals neededto find methods to communicate securely with each other and keep their communications hidden from enemies.</p>
-        <h2>Caesar Ciper</h2>
+        <h3>Caesar Ciper</h3>
         <p>One of the earliest methods of cryptograpgy is the <b>Caesar Cipher</b>, Julius Caesar, a Roman general, needed a method for communicating securely with his military. He developed a method for hiding his communications, which later came to be known as th e Caesar Cipher.</p>
-
+        <p>The <code>Caesar cipher</code> is a method of encryption - a process of modifying a message or in formation to prevent unauthorized parties from accessing it.</p>
     </body>
 </html>
