@@ -12,6 +12,7 @@ Let's start it
 <ol>
     <li>create a droplet</li>
     <li>choose an image by select VPN Access Server</li>
-    <img src="{{https://namtaetech.github.io/}}/docs/_posts/pictures/b4-1.jpg" alt="Digital Ocean selected image">
+    <!--<img src="{{https://namtaetech.github.io/}}/docs/_posts/pictures/b4-1.jpg" alt="Digital Ocean selected image"> -->
+    ![Digital Ocean selected image](/docs/_posts/pictures/b4-1.jpg)
 </ol>
 
