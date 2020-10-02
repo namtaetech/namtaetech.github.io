@@ -5,12 +5,13 @@ date:   2020-10-02 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
-<h3><b>Introduction to SIEM</b></h3>
+<b>Introduction to SIEM</b>
 <ul>
     <li>SIEM is a system information and event management (a technology)</li>
     <li>Cybersecurity goals -- confidentiality, integrity, and availability</li>
 </ul>
-<h3><b>SEM + SIM = SIEM (security information and event managment)</b></h3>
+
+<b>SEM + SIM = SIEM (security information and event managment)</b>
 <p>SIM - focused on log management and involves collecting logs in a central location for later analysis
 <br>SEM - focused on event monitoring and involves identifying, evaluating and correlating log to determine security events and create alerts
 <br>SIEM - combines the technologies of SIM and SEM to collect, organize, and analyze logs to detect security-related events across an organization;s technology infrastructure
@@ -22,8 +23,7 @@ Benefits: Organizations use monitoring to protect against security events with t
     <li>Organizations <b>aggregate, parse, and normalize logs</b> so that they can be analyzed together.</li>
     <li>Organizations <b>correlate</b> these logs with rules to alert when a security event or suspicious activity is detected.</li>
 
-
-<h3><b>Continuous monitoring aka ISCM </b></h3>
+<b>Continuous monitoring aka ISCM </b>
 <p>is the process and technologies used to detect information security risks associated with an organization’s operational environment in real-time which provide s real-time insight into
 <ul>
     <li>the current state (network asset)</li>
@@ -35,14 +35,14 @@ Limitation whichorganization can’t protect against every single potential atta
     <li>Financial limitations</li>
     <li>Staffing limitation</li>
 
-<h3><b>Prioritizing Risks</b></h3>
+<b>Prioritizing Risks</b>
 <ul>
     <li>Compliance - depending on the industry a business is in, they may be required to monitor and analyze certain applications and system activities </li>
     <li>Financial impact - how a system breach or shutdown would impact the financial performance of an organization</li>
     <li>Reputation impact - how an incident would affect the organization’s reputation with their customers</li>
     <li>Likelihood of attack - there are many types of security risks that can occur, some are more likely than other</li>
 
-<h3><b>Logs</b></h3> 
+<b>Logs</b>
 Are the most common organizational method for monitoring. It is a record of an event occurring such as state, access, and user activities within a device or a network, also contain entries which represent specific events occurring on a device network.
 <b>Log types (4 types)</b>
 <ol>
