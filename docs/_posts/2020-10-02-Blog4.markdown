@@ -1,17 +1,53 @@
 ---
 layout: post
-title:  "Blog 4 - Setup VPN server using Digital Ocean"
+title:  "Blog 4 - SIEMs"
 date:   2020-10-02 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
-<h2>How to set up open VPN with Digital Ocean</h2>
-<p>Using VPN server on Digigal Ocean platform, you will get VPN server license on 1 user for free. In order to have more than 1 user connect to server at <b>the same time</b>, you will need to purchase more license. </p> 
-
-Let's start it
+<h3><b>Introduction to SIEM</b></h3>
+<ul>
+    <li>SIEM is a system information and event management (a technology)</li>
+    <li>Cybersecurity goals -- confidentiality, integrity, and availability</li>
+</ul>
+<h3><b>SEM + SIM = SIEM (security information and event managment)</b></h3>
+<p>SIM - focused on log management and involves collecting logs in a central location for later analysis
+<br>SEM - focused on event monitoring and involves identifying, evaluating and correlating log to determine security events and create alerts
+<br>SIEM - combines the technologies of SIM and SEM to collect, organize, and analyze logs to detect security-related events across an organization;s technology infrastructure
+</p>
+Benefits: Organizations use monitoring to protect against security events with the following steps:
 <ol>
-    <li>create a droplet</li>
-    <li>choose an image by select VPN Access Server</li>
-    <img src="https://github.com/namtaetech/namtaetech.github.io/blob/master/docs/_posts/assets/b4-1.jpg" alt="oops">
-</ol>
+    <li>Organizations decide <b>what to monitor</b> by prioritizing the risks to their business.</li>
+    <li>Organizations decide <b>how to monitor</b>, which is typically accomplished by logs.</li>
+    <li>Organizations <b>aggregate, parse, and normalize logs</b> so that they can be analyzed together.</li>
+    <li>Organizations <b>correlate</b> these logs with rules to alert when a security event or suspicious activity is detected.</li>
 
+
+<h3><b>Continuous monitoring aka ISCM </b></h3>
+<p>is the process and technologies used to detect information security risks associated with an organization’s operational environment in real-time which provide s real-time insight into
+<ul>
+    <li>the current state (network asset)</li>
+    <li>Vulnerabilities (threats that attack an organization’s networked asset)</li>
+    <li>Effectiveness (of security controls protecting an organization’s networked asset)</li>
+</ul>
+Limitation whichorganization can’t protect against every single potential attack
+<ul>
+    <li>Financial limitations</li>
+    <li>Staffing limitation</li>
+
+<h3><b>Prioritizing Risks</b></h3>
+<ul>
+    <li>Compliance - depending on the industry a business is in, they may be required to monitor and analyze certain applications and system activities </li>
+    <li>Financial impact - how a system breach or shutdown would impact the financial performance of an organization</li>
+    <li>Reputation impact - how an incident would affect the organization’s reputation with their customers</li>
+    <li>Likelihood of attack - there are many types of security risks that can occur, some are more likely than other</li>
+
+<h3><b>Logs</b></h3> 
+Are the most common organizational method for monitoring. It is a record of an event occurring such as state, access, and user activities within a device or a network, also contain entries which represent specific events occurring on a device network.
+<b>Log types (4 types)</b>
+<ol>
+    <li>Operation system logs are created on Linux and Windows - security access events, security permissions events</li>
+    <li>Application logs are created by apache and IIS (internet information services) server -  application access events, fraud events</li>
+    <li>Network device logs are created on routers, switches, and DHCP?DNS servers -  administrative events, network security events</li>
+    <li>Security device logs - endpoint events, IDS signature events are created on IDS/IPS, firewalls, endpoint devices and honeypots</li>
+</ol>
