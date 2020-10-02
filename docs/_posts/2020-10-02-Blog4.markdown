@@ -1,7 +1,17 @@
 ---
 layout: post
-title:  "Blog 4"
+title:  "Blog 4 - Setup VPN server using Digital Ocean"
 date:   2020-10-02 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<h2>How to set up open VPN with Digital Ocean</h2>
+<p>Using VPN server on Digigal Ocean platform, you will get VPN server license on 1 user for free. In order to have more than 1 user connect to server at <b>the same time</b>, you will need to purchase more license. </p> 
+
+Let's start it
+<ol>
+    <li>create a droplet</li>
+    <li>choose an image by select VPN Access Server</li>
+    <img src="/pictures/b4-1.jpg" alt="Digital Ocean selected image">
+</ol>
+
