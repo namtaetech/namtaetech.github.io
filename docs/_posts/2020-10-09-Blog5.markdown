@@ -7,7 +7,7 @@ auther: "Namtae"
 ---
 <html>
 <h2>Information Security Certification</h2>
-<p>Certifications provide prospective professionals an advantage in the information security job market. There are additional benefits as well:<./p>
+<p>Certifications provide prospective professionals an advantage in the information security job market. There are additional benefits as well:</p>
     <ol>
         <li>Education</li>
             <p>>While preparing for a certification, even before the certification is formally awarded, individuals learn new skills related to the subjects covered in the certification.  While achieving credentials is often the objective, the material learned during studying for the exam is also very valuable to job performance.</p>
@@ -48,6 +48,6 @@ auther: "Namtae"
         </ul>
     </ol>
 
-View the following guide from CompTIA detailing several certification paths:   
+<p>View the following guide from CompTIA detailing several certification paths:</p>
 
 </html>
