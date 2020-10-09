@@ -5,3 +5,49 @@ date:   2020-10-09 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<html>
+<h2>Information Security Certification</h2>
+<p>Certifications provide prospective professionals an advantage in the information security job market. There are additional benefits as well:<./p>
+    <ol>
+        <li>Education</li>
+            <p>>While preparing for a certification, even before the certification is formally awarded, individuals learn new skills related to the subjects covered in the certification.  While achieving credentials is often the objective, the material learned during studying for the exam is also very valuable to job performance.</p>
+        <li>Networking</li>
+            <p>Many certifications have national and local organizations that host meetings, conferences, seminars and social events. These events can provide opportunities to network with peers in your field.</p>
+        <li>Career Advancement</li>
+            <p>Information security certifications can also place more established professionals in a stronger position to obtain a promotion.</p>
+    </ol>
+<h3>Type of InfoSec Certification</h3>
+<p>Certifications can be broken into 3 categories:</p>
+    <ol>
+        <li>Beginner information security certifications, which are the first certifications that individuals new to the field should obtain.</li>
+        <ul>
+            <li>These certifications typically do not have minimum work requirements or prerequisite courses.</li>
+            <li>They are typically broad in the subjects that they cover.</li>
+            <li>Examples include Security+, CEH, and GSEC.</li>
+        </ul>
+        <li>Advanced information security certifications, which should be obtained after working in the industry for several years. While each certification varies, some require working in the industry for 3-5 years.</li>
+        <ul>
+            <li>Many of these certifications focus on security management.</li>
+            <li>These certifications typically have minimum work requirements and prerequisite courses.</li>
+            <li>They are typically broad in the subjects that they cover.</li>
+            <li>Examples include CISSP and CISM.</li>
+        </ul>
+        <li>Specialized information security certifications, which are more advanced certifications that security professionals should obtain after working in the industry for several years.</li>
+        <ul>
+            <li>These certifications typically have minimum work requirements and prerequisite courses.</li>
+            <li>They typically cover specific subjects:</li>
+                <ul>
+                    <li>GIAC Certified Forensic Examiner (GCFE) is specific to forensics professionals.</li>
+                    <li>Offensive Security Certified Professional (OSCP) and PenTest+ are specific to penetration testers.</li>
+                </ul>
+            <li>Specialized certifications can be vendor or non-vendor specific:</li>
+                <ul>
+                    <li>OSCP is a non-vendor-specific penetration testing certification.</li>
+                    <li>Cisco Certified Network Associate (CCNA) is a vendor-specific certification for Cisco products.</li>
+                </ul>
+        </ul>
+    </ol>
+
+View the following guide from CompTIA detailing several certification paths:   
+
+</html>
