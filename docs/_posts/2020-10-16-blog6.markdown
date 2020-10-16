@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "Blog 6 - Digital Forensics"
+date:   2020-10-16 11:59:25 -0700
+categories: jekyll blogs
+auther: "Namtae"
+---
+<html>
+<h3>What Is Digital Forensics?</h3>
+<p>Digital forensics is a field dedicated to identifying, extracting, preserving, and reporting on information obtained from computer and network systems.</p>
+
+<p>The following definition of digital forensics was published in the article "Digital Records Forensics: A New Science and Academic Program for Forensic Readiness" in the Journal of Digital Forensics, Security and Law:
+“The use of scientifically derived and proven methods toward the preservation, collection, validation, identification, analysis, interpretation, documentation and presentation of digital evidence derived from digital sources for the purpose of facilitating or furthering the reconstruction of events found to be criminal, or helping to anticipate unauthorized actions shown to be disruptive to planned operations.”</p>
+
+
+
+<h3>Legal Requirements</h3>
+<p>Why is it important to preserve the integrity of digital evidence?</p>
+    <ul>
+        <li>Forensic evidence that is intended to be used in legal proceedings must satisfy a set of legal standards in order to be admissible.</li>
+        <li>Imagine the disappointment of spending months searching through computer and network systems collecting evidence, only to have it considered inadmissable and thrown out due to improper procedures.</li>
+        <li>Forensic evidence is held to the same standards as any other evidence submitted in a legal case. All evidence must be wholly intact and unaltered from the scene of the crime.</li>
+        <li>Once evidence is collected, the investigator or analyst is accountable for its ownership and whereabouts at all times.</li>
+    </ul>
+<h3>Chain of Custody</h3>
+<p>A chain of custody is a documentation of the possession of evidence.</p>
+    <ul>
+        <li>Evidence taken into custody must be accounted for. This means that its whereabouts and ownership must be accurately documented at all times, from the time it is acquired to when it is presented in the court room.</li>
+        <li>When testifying about the integrity of evidence, one must be able to provide a documented, uninterrupted chain of custody, which includes:
+        <ul>
+            <li>A detailed log of each person who accessed or handled the evidence.</li>
+            <li>The purpose of that access.</li>
+            <li>Dates and times it was handled.</li>
+        </ul>
+        <li>If you are not able to show an uninterrupted chain of custody, months or even years of hard work can be considered inadmissible in a court of law, leading to the possible release of criminals. This is why it's so critical to ensure that a proper chain of custody is maintained at all times.</li>
+    </ul>
+<h3>The Digital Forensic Process</h3>
+<p>The National Institute of Standards and Technology defines a process for performing digital forensics in Special Publication 800-86 as follows:</p>
+    <ul>
+        <li><b>Collection:</b> We must first collect the data before we can examine and analyze it. The collection phase is the springboard to the digital forensics process which includes identifying, labeling, recording, and acquiring data from sources while following procedures to preserve the integrity of the data.</li>
+        <li><b>Examination:</b> After we've collected the evidence, we begin the examination phase, which ensures that all data collected is relevant to the case. This includes forensically processing collected data and assessing and extracting data of interest while preserving the integrity of the data. This usually means working from a copy, rather than the original.</li>
+        <li><b>Analysis:</b> After we've identified all relevant evidence, we being the analysis phase by analyzing the results of the examination, using legally approved methods and techniques, to derive information that addresses the questions that inspired the collection and examination.</li>
+        <li><b>Reporting:</b> After we've analyzed all of the evidence, digital forensic investigators are required to formally report the results of the analysis, which may include describing the actions used, explaining how tools and procedures were selected, determining what other actions need to be performed, and recommended improvements to the forensic process.</li>
+    </ul>
+<h3>Evidence Acquisition</h3>
+<p>Evidence acquisition is one of the most critical steps in the entire forensic process. If done improperly, it can result in evidence being missed, lost, or inadmissible in a court of law.</p>
+    <ul>
+        <li>Digital forensic data has one of two classifications: network-based or host-based.</li>
+        <ul>
+            <li>Network-based data comes from data communications captured by network-based systems such as an IDS, IPS, and firewalls, in the form of a packet capture or similar.</li>
+            <ul>
+                <li>Packet captures are useful for reconstructing events involving computer break-ins.</li>
+                <li>Logs from firewalls also provide insight into network activity.</li>
+            </ul>
+            <li>Host-based data is typically found on a system that encompasses a wide variety of artifacts.</li>
+            <ul>
+                <li>Investigations involving computer break-ins may involve the forensic examination of local file systems, programs, access to critical documents, and/or alterations to system files and directories.</li>
+                <li>Host-based examinations may involve reconstructing internet use, unauthorized activity, email recovery, and the identification of malicious files.</li>
+            </ul>
+        </ul>
+    </ul>
+
+
+
+
+
+
+
