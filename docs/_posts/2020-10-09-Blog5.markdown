@@ -10,7 +10,7 @@ auther: "Namtae"
 <p>Certifications provide prospective professionals an advantage in the information security job market. There are additional benefits as well:</p>
     <ol>
         <li>Education</li>
-            <p>>While preparing for a certification, even before the certification is formally awarded, individuals learn new skills related to the subjects covered in the certification.  While achieving credentials is often the objective, the material learned during studying for the exam is also very valuable to job performance.</p>
+            <p>While preparing for a certification, even before the certification is formally awarded, individuals learn new skills related to the subjects covered in the certification.  While achieving credentials is often the objective, the material learned during studying for the exam is also very valuable to job performance.</p>
         <li>Networking</li>
             <p>Many certifications have national and local organizations that host meetings, conferences, seminars and social events. These events can provide opportunities to network with peers in your field.</p>
         <li>Career Advancement</li>
@@ -49,5 +49,6 @@ auther: "Namtae"
     </ol>
 
 <p>View the following guide from CompTIA detailing several certification paths:</p>
+<img src="https://github.com/namtaetech/namtaetech.github.io/blob/master/docs/_posts/assets/cert_roadmap.jpg?raw=true">
 
 </html>
