@@ -12,8 +12,6 @@ auther: "Namtae"
 <p>The following definition of digital forensics was published in the article "Digital Records Forensics: A New Science and Academic Program for Forensic Readiness" in the Journal of Digital Forensics, Security and Law:
 “The use of scientifically derived and proven methods toward the preservation, collection, validation, identification, analysis, interpretation, documentation and presentation of digital evidence derived from digital sources for the purpose of facilitating or furthering the reconstruction of events found to be criminal, or helping to anticipate unauthorized actions shown to be disruptive to planned operations.”</p>
 
-
-
 <h3>Legal Requirements</h3>
 <p>Why is it important to preserve the integrity of digital evidence?</p>
     <ul>
@@ -27,7 +25,7 @@ auther: "Namtae"
 <p>A chain of custody is a documentation of the possession of evidence.</p>
     <ul>
         <li>Evidence taken into custody must be accounted for. This means that its whereabouts and ownership must be accurately documented at all times, from the time it is acquired to when it is presented in the court room.</li>
-        <li>When testifying about the integrity of evidence, one must be able to provide a documented, uninterrupted chain of custody, which includes:
+        <li>When testifying about the integrity of evidence, one must be able to provide a documented, uninterrupted chain of custody, which includes:</li>
             <ul>
                 <li>A detailed log of each person who accessed or handled the evidence.</li>
                 <li>The purpose of that access.</li>
@@ -35,6 +33,7 @@ auther: "Namtae"
             </ul>
         <li>If you are not able to show an uninterrupted chain of custody, months or even years of hard work can be considered inadmissible in a court of law, leading to the possible release of criminals. This is why it's so critical to ensure that a proper chain of custody is maintained at all times.</li>
     </ul>
+    
 
 <h3>The Digital Forensic Process</h3>
 <p>The National Institute of Standards and Technology defines a process for performing digital forensics in Special Publication 800-86 as follows:</p>
