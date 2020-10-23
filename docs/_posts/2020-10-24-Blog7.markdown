@@ -26,6 +26,7 @@ auther: "Namtae"
         <li>The server will return the requested resource or execute the service requested.</li>
     </ol>
 <p>For example: You go on Facebook to check your friend's vacation photos. Your web browser is the client requesting the resource—your friend's vacation photos. Facebook's web server is the server that hosts the image files of your friend's vacation photos. Facebook's web server is responsible for returning the requested photos back to your web browser.</p>
+<img src="">
 
 <p>This two-way conversation between the client and server is known as the request and response method of device communication. Cover the following:</p>
     <ol>
