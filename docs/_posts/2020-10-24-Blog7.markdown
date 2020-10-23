@@ -1,7 +1,47 @@
 ---
 layout: post
-title:  "Blog 7 - "
+title:  "Blog 7 - Networks"
 date:   2020-10-16 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<html>
+<p>A computer network is a multiple devices connected together to shared resources and/or services.</p>
+    <ul>
+        <li><b>Devices</b>, also known as <b>nodes</b>, can be computers, laptops, mobile phones, printers, servers, etc.</li>
+        <li><b>Resources</b> can be webpages, emails, images, data files, etc.</li>
+        <li><b>Services</b> are computer programs that have a function, such as processing an online order or doing a calculation.</li>
+    </ul>
+<p>Computer networking is essential for the following technical roles, among others:</p>
+    <ul>
+        <li><b>Security Operations Center (SOC) Staff</b>: SOC staff commonly diagnose and troubleshoot network related security issues and attacks. Understanding network devices and network design helps them to quickly resolve and identify issues.</li>
+        <li><b>Network Security Engineer</b>: Network security engineers may work on the design of a company's network architecture to protect their organization from security risks.</li>
+        <li><b>Penetration Tester</b>: Penetration testers often test for vulnerabilities in a company's network. Understanding network design and common network vulnerabilities is core knowledge for penetration testers.</li>
+    </ul>
+<p>A defined model is required for devices to share resources.</p>
+<p>The client-server model is a network computing model that defines how resources and services are shared across a network. Cover the following:</p>
+    <ol>
+        <li>In this model, the client requests a resource or a service.</li>
+        <li>The server hosts the resources and services that the client is requesting.</li>
+        <li>The server will return the requested resource or execute the service requested.</li>
+    </lo>
+<p>For example: You go on Facebook to check your friend's vacation photos. Your web browser is the client requesting the resource—your friend's vacation photos. Facebook's web server is the server that hosts the image files of your friend's vacation photos. Facebook's web server is responsible for returning the requested photos back to your web browser.</p>
+
+<p>This two-way conversation between the client and server is known as the request and response method of device communication. Cover the following:</p>
+    <ol>
+        <li>The request is the process in which the client sends a message to a server asking for a resource or to run a service.</li>
+        <li>The response is sent back to the client after the server receives and processes the request.</li>
+        <li>The response message can be:</li>
+            <ul>
+                <li>An acknowledgement of the request.</li>
+                <li>The resource requested.</li>
+                <li>An error message.</li>
+            </ul>
+    </ol>
+<p>Using the Facebook example:<br>
+The browser makes a request: "Facebook, can you please get me my friend's vacation photo?"
+Facebook's web server provides a response: "Yes, here is your friend's vacation photo." </p>
+
+
+<p>The client-server model doesn't mean a "one client, one server" relationship. Typically, servers receive resource requests from many clients.<br>
+For example, if other friends went on Facebook to view your friend's vacation photos, each friend would be using a different client (browser) to pull the same resource (vacation photo) from the single Facebook web server.</p>
