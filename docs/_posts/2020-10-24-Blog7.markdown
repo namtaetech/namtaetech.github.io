@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 7 - Networks"
+title:  "Blog 7 - What is networks"
 date:   2020-10-16 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
