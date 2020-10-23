@@ -24,7 +24,7 @@ auther: "Namtae"
         <li>In this model, the client requests a resource or a service.</li>
         <li>The server hosts the resources and services that the client is requesting.</li>
         <li>The server will return the requested resource or execute the service requested.</li>
-    </lo>
+    </ol>
 <p>For example: You go on Facebook to check your friend's vacation photos. Your web browser is the client requesting the resource—your friend's vacation photos. Facebook's web server is the server that hosts the image files of your friend's vacation photos. Facebook's web server is responsible for returning the requested photos back to your web browser.</p>
 
 <p>This two-way conversation between the client and server is known as the request and response method of device communication. Cover the following:</p>
@@ -38,10 +38,11 @@ auther: "Namtae"
                 <li>An error message.</li>
             </ul>
     </ol>
+
 <p>Using the Facebook example:<br>
 The browser makes a request: "Facebook, can you please get me my friend's vacation photo?"
 Facebook's web server provides a response: "Yes, here is your friend's vacation photo." </p>
 
 
-<p>The client-server model doesn't mean a "one client, one server" relationship. Typically, servers receive resource requests from many clients.<br>
-For example, if other friends went on Facebook to view your friend's vacation photos, each friend would be using a different client (browser) to pull the same resource (vacation photo) from the single Facebook web server.</p>
+<p>The client-server model doesn't mean a "one client, one server" relationship. Typically, servers receive resource requests from many clients.</p>
+<p>For example, if other friends went on Facebook to view your friend's vacation photos, each friend would be using a different client (browser) to pull the same resource (vacation photo) from the single Facebook web server.</p>
