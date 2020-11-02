@@ -1,7 +1,30 @@
 ---
 layout: post
-title:  "Blog 8"
+title:  "Blog 8 PCAP and TCPReplay"
 date:   2020-10-30 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<h3>What is PCAP file?</h3>
+<p> PCAP is an application programming interface (API) that captures live network packet data from OSI model Layer 2-7 for network analysis purposes. It collects and records packet data from a network. This PCAP file can be used to over view TCP/IP and UDP network packets. </p>
+
+<h3>Using PCAP file capture and Analysis</h3>
+<p>For example, Wireshark allows you to filter the type of traffic you see with capture filters and display filters. Capture filters allow you to filter what traffic you capture and display filters allow you to filter what traffic you see.</p>
+<p>There are many vertion of PCAP </p>
+<ul>
+    <li>Libpcap</li>
+    <li>WinPcap</li>
+    <li>PCAPng</li>
+    <li>Npcap</li>
+</ul>
+<p>Each version has its own use cases and different types of network monitoring tools support different forms of PCAP files. For instance, Libpcap is a portable open-source c/C++ library designed for Linux and Mac OS users. Libpcap enables administrators to capture and filter packets. Packet sniffing tools like tcpdump use the Libpcap format. The biggest advantage of packet capturing is that it grants visibility. You can use packet data to pinpoint the root cause of network problems. You can monitor traffic sources and identify the usage data of applications and devices. PCAP data gives you the real-time information you need to find and resolve performance issues to keep the network functioning after a security event.</p>
+
+<h3>TCPReplay</h3>
+<p>TCPReplay is for replaying previously captured network traffic. It allows you to classify
+traffic as client or server, rewrite Layer 2, 3 and 4 packets and finally replay the traffic
+back onto the network and through other devices such as switches, routers, firewalls,
+NIDS and IPS’s.</p>
+
+<p>Warning: by running the TCPReplay you might send out some malicious packets outside of your network. And if you
+accidentally replay some dangerous traffic on the real IPs, you are considered a hack
+who are trying to hack the network, in result you will be getting arrest for commit a crime, So in order prevent those accident you should disable your network connection or even disable your wifi adapter when you run the replay command</p>
