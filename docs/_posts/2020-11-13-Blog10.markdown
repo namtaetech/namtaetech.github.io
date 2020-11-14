@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Blog 9"
-date:   2020-11-6 11:59:25 -0700
+title:  "Blog 10"
+date:   2020-11-13 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
