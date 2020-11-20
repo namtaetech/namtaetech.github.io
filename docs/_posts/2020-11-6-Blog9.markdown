@@ -6,7 +6,7 @@ categories: jekyll blogs
 auther: "Namtae"
 ---
 
-<html>
+
 <p>Hello, from my CIT 484 class (Web Development) one of our assignment is to create a calculator that calculate the total price of a products.</p>
 
 <p>The program will take the input of </p>
@@ -20,9 +20,9 @@ auther: "Namtae"
 
 <p>In our class we were using JSBin which is a web-based program that any user can write a code in HTML, CSS and JavaScript in 1 window and it is giving the output right away while the user is writing the code.</p>
 <p>Here check out my code here</p>
-<a rel ="https://github.com/namtaetech/webdev/tree/master/webdev_hw/Calculator">  
+
+<a rel ="https://github.com/namtaetech/webdev/tree/master/webdev_hw/Calculator">Calculator files</a>
 
 
 
 
-</html>
