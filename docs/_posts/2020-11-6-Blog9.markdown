@@ -74,7 +74,7 @@ auther: "Namtae"
 </html>
 {% endhighlight %}
 
-<code> CSS FILE </code>
+<code> CSS FILE - style.css</code>
 {% highlight ruby linenos %}
 body{
     border: auto;
@@ -128,7 +128,7 @@ body{
     
 {% endhighlight %}
 
-<code> JavaScript FILE </code>
+<code> JavaScript FILE - script.js </code>
 {% highlight ruby linenos %}
 const calcButton = document.querySelector(".button"); 
 calcButton.addEventListener("click",function(e){calculate(e)});
