@@ -21,7 +21,7 @@ auther: "Namtae"
 <p>In our class we were using JSBin which is a web-based program that any user can write a code in HTML, CSS and JavaScript in 1 window and it is giving the output right away while the user is writing the code.</p>
 <p>Here check out my code here</p>
 
-<a hrel ="https://github.com/namtaetech/webdev/tree/master/webdev_hw/Calculator">Click Here to check out my Calculator files</a>
+<code> HTML FILE </code>
 
 {% highlight ruby linenos %}
 <!DOCTYPE html>
@@ -30,10 +30,10 @@ auther: "Namtae"
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>CMP 484</title>
-  <script src="script.js" async></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="script.js" async></script>
   <form id="calculatorForm" method="get" action="">
     <fieldset>
       <legend>Calculator</legend>
@@ -74,5 +74,93 @@ auther: "Namtae"
 </html>
 {% endhighlight %}
 
+<code> CSS FILE </code>
+{% highlight ruby linenos %}
+body{
+    border: auto;
+    border-color: grey;
+  }
+  
+  legend{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+  }
+  
+  fieldset{ 
+    border-color: black;
+    width=80%;
+    margin: auto;
+    flex;
+  }
+  
+  #qtsBox input{
+    display: block;
+  }
+  
+  #priceBox input::-webkit-outer-spin-button,
+  #priceBox input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+    
+  
+  #taxBox input::-webkit-outer-spin-button,
+  #taxBox input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #discountBox input::-webkit-outer-spin-button,
+  #discountBox input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #totalBox input{
+    display: block;
+  }
+  
+  @media screen and (max-width: 480px) {
+      body {
+        width: 90%;
+      }
+    
+{% endhighlight %}
 
+<code> JavaScript FILE </code>
+{% highlight ruby linenos %}
+const calcButton = document.querySelector(".button"); 
+calcButton.addEventListener("click",function(e){calculate(e)});
+// Function called when the form is submitted.
 
+// Function performs the calculation and returns false.
+
+function calculate(e) {
+    e.preventDefault();
+    var qts = parseInt(document.getElementById('qts').value);
+    var price = parseInt(document.getElementById('price').value);
+    var taxes = parseInt(document.getElementById('taxes').value);
+    var discount = parseInt(document.getElementById('discount').value);
+    var subtotal = (qts*price)-((qts*price)*(discount/100));
+    var total = subtotal+(subtotal*(taxes/100));
+     
+    
+    console.log(total)
+    document.getElementById('total').value = total.toFixed(2);
+
+} // End of calculate() function.
+
+ 
+
+// function init() 
+// {
+
+//    'use strict';
+//    document.getElementById('calculatorForm').onsubmit = calculate;
+
+// } // End of init() function.
+
+// window.onload = init;
+
+{% endhighlight %}
