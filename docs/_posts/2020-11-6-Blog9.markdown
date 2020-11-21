@@ -22,7 +22,8 @@ auther: "Namtae"
 <p>Here check out my code here</p>
 
 <a hrel ="https://github.com/namtaetech/webdev/tree/master/webdev_hw/Calculator">Click Here to check out my Calculator files</a>
-{%
+
+{% highlight ruby linenos %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,7 +72,7 @@ auther: "Namtae"
    </form>
 </body>
 </html>
-%}
+{% endhighlight %}
 
 
 
