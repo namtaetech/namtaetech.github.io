@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 10"
+title:  "Blog 10 - Cut words program"
 date:   2020-11-13 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
