@@ -5,3 +5,67 @@ date:   2020-11-13 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<p>This week I have another assignment from CIT 484. This assignment is about taking a paragragh of text and cut into your desire amount of words</p>
+
+<h3>Here is my code from using JSbin</h3>
+
+<code>HTML file</code>
+{% highlight ruby linenos %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <form id="countText" method="POST">
+    <fieldset>
+      <p>Enter your description.</p>
+      <label for="metadata">Metadata</label><br>
+      <textarea id="metadata" name="metadata" cols="30" rows="10"></textarea><br>
+      <label for="count">Character Count</label><br>
+      <input type="number" id="count" name="count"><br>
+      <label for="result">Result</label><br>
+      <textarea id="result" name="result" cols="30" rows="10"></textarea><br>
+      <button onclick="cutText()">Submit</button>
+    </fieldset>
+  </form>
+  
+
+</body>
+</html>
+{% endhighlight %}
+
+<code>JavaScript File</code>
+{% highlight ruby linenos %}
+function cutText(){
+  'use strict';
+  var originalText = document.getElementById('metadata').value;
+  var countChar = parseInt(document.getElementById('count').value);
+  var lastSpace = originalText.lastIndexOf(" ", countChar);
+  var limitedText = originalText.slice(0, lastSpace);
+  
+  
+    if ( originalText.length >= countChar){
+      document.getElementById('result').value = limitedText + "...";
+    }
+    else{
+      
+      document.getElementById('result').value = originalText;
+    }
+    
+    return false;   
+  
+}
+
+function init() 
+{
+
+   'use strict';
+   document.getElementById('countText').onsubmit = cutText;
+
+} // End of init() function.
+
+window.onload = init;
+{% endhighlight %}
