@@ -1,7 +1,11 @@
 ---
 layout: post
-title:  "Blog 11"
+title:  "Blog 11 - NETCAT - Reverse turnel"
 date:   2020-11-20 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<h3>NETCAT COMMAND</h3>
+<p>This week I have an extra credit for CIT 425 which using NETCAT command</p>
+
+
