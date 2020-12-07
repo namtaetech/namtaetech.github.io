@@ -45,7 +45,7 @@ run <code>nc –nv [server machine's IP Address] 4444 < [file path]
     <li>[file path] - replace this with your file path
 </ul>
 
-<h3>Bind Shell
+<h3>Bind Shell</h3>
 <p>At alice, execute: touch foo.bar (to make a file named foo.bar in current directory)</br>
 At Alice, execute: <code>nc –nlvp 4444 –e /bin/bash</code><br>
 At Bob, execute: <code>nc –nv ip.addr.of.alice 4444</code><br>
