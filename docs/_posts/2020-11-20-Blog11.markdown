@@ -51,7 +51,7 @@ At Alice, execute: <code>nc –nlvp 4444 –e /bin/bash</code><br>
 At Bob, execute: <code>nc –nv ip.addr.of.alice 4444</code><br>
 At Bob, type “ls” and press enter<br>
 At Bob, type “whoami” and press enter<br>
-<img src="https://raw.githubusercontent.com/namtaetech/namtaetech.github.io/master/docs/_posts/assets/Picture1.png">
+<img src="https://github.com/namtaetech/namtaetech.github.io/blob/master/docs/_posts/assets/Picture1.png?raw=true">
 Explain why Bob is seeing these results for “ls” and “whoami”<br>
 	Because when Alice run nc -nlvp 4444 -e /bin/bash, it is telling the listening port to have an environment of bash. So, anyone who connects to Alice using port 4444, they will be able to use bash command on Alice machine and be able to access her file system. </p>
 
