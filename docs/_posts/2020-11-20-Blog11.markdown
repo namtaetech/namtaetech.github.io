@@ -7,5 +7,56 @@ auther: "Namtae"
 ---
 <h3>NETCAT COMMAND</h3>
 <p>This week I have an extra credit for CIT 425 which using NETCAT command</p>
+<p>This assignment required 2 vm machines and using ncat command for create a connection between the 2 machines</p>
+In my case I'm naming my server machine is Bob and client machine is Alice
+
+On the client machine(Alice) run <code>nc -nlvp 4444</code>
+<ul>
+    <li>n - numeric-only IP address</li>
+    <li>l - listen mode</li>
+    <li>p - port</li>
+    <li>v - verbose</li>
+    <li>4444 - port number 4444
+</ul>
+This means at the client machine, we run this command for allowing the client to listen on port 4444
+
+On the server machine (Bob) run <code>nc -nv [client's machine IP address] 4444
+<ul>
+    <li>n - numeric-only IP address</li>
+    <li>v - verbose</li>
+    <li>[client's machine IP address] - replace with the target machine</li>
+</ul>
+This mean at the server client, we run this command for connecting the client machine via port 4444
+
+
+<h3>To transfer file</h3>
+If you want to transfer a file from client command
+
+At the server machine 
+run <code>nc –nlvp 4444 > fromClient.txt</code>
+<ul>
+    <li>fromClient.txt - a file that will get a copy of the file that you copy from</li>
+</ul>
+
+At the client machine 
+run <code>nc –nv [server machine's IP Address] 4444 < [file path]
+<ul>
+    <li>[server machine's IP Address] - replace this with the target IP address</li>
+    <li>[file path] - replace this with your file path
+</ul>
+
+<h3>Bind Shell
+<p>At alice, execute: touch foo.bar (to make a file named foo.bar in current directory)</br>
+At Alice, execute: <code>nc –nlvp 4444 –e /bin/bash</code><br>
+At Bob, execute: <code>nc –nv ip.addr.of.alice 4444</code><br>
+At Bob, type “ls” and press enter<br>
+At Bob, type “whoami” and press enter<br>
+Explain why Bob is seeing these results for “ls” and “whoami”<br>
+	Because when Alice run nc -nlvp 4444 -e /bin/bash, it is telling the listening port to have an environment of bash. So, anyone who connects to Alice using port 4444, they will be able to use bash command on Alice machine and be able to access her file system. </p>
+
+
+
+
+
 
 
