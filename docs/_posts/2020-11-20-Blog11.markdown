@@ -16,7 +16,7 @@ On the client machine(Alice) run <code>nc -nlvp 4444</code>
     <li>l - listen mode</li>
     <li>p - port</li>
     <li>v - verbose</li>
-    <li>4444 - port number 4444
+    <li>4444 - port number 4444</li>
 </ul>
 This means at the client machine, we run this command for allowing the client to listen on port 4444
 
