@@ -30,7 +30,7 @@ Now that we understand the importance of backups, we’ll discuss how to actuall
 
 The <code>tar command</code> is a Linux utility that system administrators use to create a backup.
 
-<h5>tar stands for tape archive.</h5>
+<code>tar stands for tape archive.</code>
 
 tar will create an archive of the files we want to back up.
 
@@ -95,7 +95,7 @@ Next, run this command with the v option and see the following output.
 <br>/var/log/vboxadd-install.log
 <br>...
 <br>...
-</blcokquote>
+</blockquote>
 This command shows the files that are being written to the archive as the command runs. However, it does not display a full listing.
 
 Run the command using the vv option and see the following output:
