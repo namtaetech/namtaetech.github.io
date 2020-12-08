@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 12 - backups and restoring data with tar command"
+title:  "Blog 12 - backups data with tar command"
 date:   2020-12-4 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
