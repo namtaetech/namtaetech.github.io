@@ -1,7 +1,109 @@
 ---
 layout: post
-title:  "Blog 12"
+title:  "Blog 12 - backups and restoring data with tar command"
 date:   2020-12-4 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+There are different types of backups, known as backup levels: full, incremental, and differential.
+
+<h4>A full backup creates a backup of the entire system</h4>
+You would create a full backup if, for instance, you recently got a new computer for work and want to do an initial backup.
+<br>
+Full backups allow for a more reliable restoration of a system. They also provide better storage management, as all the files are in one place.
+<br>
+However, full backups are slow and require a large storage space capable of storing the entire system.
+<br>
+In addition to a full backup, administrators can create backups of individual files and folders.
+<br>
+For example, an admin may create a backup containing only the /home directory, thus ensuring that users will always have access to their data, even if the rest of the machine is compromised.
+
+<h4>Incremental and differential backups</h4> 
+They archive only data that has changed since the last full backup. They are fast and take up less disk space, but you'll need all backups in order to restore the full data.
+<br>
+<h4>Why backup levels are important:</h4>
+
+When a system is compromised, users may have to delete the entire operating system and install it from scratch. This is time-consuming and costly for enterprise-level networks. Instead of deleting and reinstalling the whole OS, the backup level allows the user to "rewind time" and restore their computer to exactly the same state it was in before being corrupted.
+
+<h4>Performing a Backup</h4>
+Now that we understand the importance of backups, we’ll discuss how to actually perform one.
+
+The <code>tar command</code> is a Linux utility that system administrators use to create a backup.
+
+<h5>tar stands for tape archive.</h5>
+
+tar will create an archive of the files we want to back up.
+
+Note the following about archives:
+
+An archive is a collection of files and directories.
+
+A backup is an archive used specifically to preserve information in the event of data loss.
+
+Archives created with tar are called tarballs and use the extension .tar.
+
+The file size of a tarball, in bytes, is equal to the sum of the file sizes of each of the files it contains. This is important, because it means that each and every tar backup of a hard drive takes up the same amount of space as all the files on the drive.
+
+Compression is a technique that transforms files into a format that takes up less space. A compressed tarball takes up less space than all of the files on disk.
+
+There are many different ways to compress a file. The most common for systems administrators are gzip and bzip2.
+
+gzip is the accepted standard for compression on Unix-like systems. bzip2 offers better compression, but is much slower than gzip.
+
+Both gzip and bzip2 are commands that can be used to compress any file, but tar has built-in flags that allow you to compress tarballs immediately.
+
+Tarballs that have been gzipped have the extension tgz or tar.gz, and the extension bz2 if they've been bzipped.
+
+Creating an Archive
+Next, we'll cover how to “create” an archive.
+
+The Systems Operations Center at Tyndall Air Force Base likely backed up all system data with the approaching threat of Hurricane Michael.
+
+They would create a full backup of all the log files in /var/log directory using the tar command as follows:
+
+tar cvf hurricane-backup-10-11-2018.tar /var/log
+
+Syntax breakdown:
+
+<code>tar [option(s)] [archive_name] [objects_to_archive]</code>
+
+tar is the Linux command. We will always begin our backups with tar.
+c , v, and f are short form options.
+<ul>
+    <li>c stands for create. We will always need this option when creating an archive.</li>
+    <li>v stands for verbose. While not necessary to used when creating an archive, this option shows details about the results of running the tar command.</li>
+    <li>It is a best practice to use this option to validate for errors. For example, that the file permissions and file sizes and file dates are archived properly.</li>
+    <li>f stands for use this archive file. It is followed by the title of the archive. It also be written as --file=archive_name. This option must be present whem creating an archive.</li>
+</ul>
+
+tar has two options that will print information about which files were archived:
+<ul>
+    <li>v, which prints the name of every file archived.</li>
+    <li>vv, which prints the full listing for each file, including the name, file permissions, owner, etc.</li>
+</ul>
+If tar does not receive files or directories to archive, it outputs the following error message:
+<br>tar: Cowardly refusing to create an empty archive
+<br>Try 'tar --help' or 'tar --usage' for more information
+
+Next, run this command with the v option and see the following output.
+
+<code>tar cvf 2018-10-12-hurricane-backup.tar /var/log</code>
+
+<blockquote>/var/log/fontconfig.log
+<br>/var/log/kern.log.2.gz
+<br>/var/log/wtmp
+<br>/var/log/vboxadd-install.log
+<br>...
+<br>...
+</blcokquote>
+This command shows the files that are being written to the archive as the command runs. However, it does not display a full listing.
+
+Run the command using the vv option and see the following output:
+
+<code>tar cvvf 2018-10-12-hurricane-backup.tar /var/log</code>
+
+<blockqoute>-rw-r--r--  root/root      5784  2019-07-03  15:38   /var/log/fontconfig.log
+-rw-r-----  syslog/adm   141571  2019-07-1-  11:16   /var/log/kern.log.2.gz
+-rw-rw-r--  root/utmp     20352  2019-07-15  15:33   /var/log/wtmp
+-rw-r--r--  root/root       695  2019-07-05  21:09   /var/log/vboxadd-install.log
+</blockqoute>
