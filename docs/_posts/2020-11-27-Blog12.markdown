@@ -102,8 +102,9 @@ Run the command using the vv option and see the following output:
 
 <code>tar cvvf 2018-10-12-hurricane-backup.tar /var/log</code>
 
-<blockqoute>-rw-r--r--  root/root      5784  2019-07-03  15:38   /var/log/fontconfig.log
--rw-r-----  syslog/adm   141571  2019-07-1-  11:16   /var/log/kern.log.2.gz
--rw-rw-r--  root/utmp     20352  2019-07-15  15:33   /var/log/wtmp
--rw-r--r--  root/root       695  2019-07-05  21:09   /var/log/vboxadd-install.log
-</blockqoute>
+<blockquote>
+-rw-r--r--  root/root      5784  2019-07-03  15:38   /var/log/fontconfig.log
+<br>-rw-r-----  syslog/adm   141571  2019-07-1-  11:16   /var/log/kern.log.2.gz
+<br>-rw-rw-r--  root/utmp     20352  2019-07-15  15:33   /var/log/wtmp
+<br>-rw-r--r--  root/root       695  2019-07-05  21:09   /var/log/vboxadd-install.log
+</blockquote>
