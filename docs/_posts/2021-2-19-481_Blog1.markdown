@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "CIT 481 Blog 1"
+date:   2020-12-4 11:59:25 -0700
+categories: jekyll blogs
+auther: "Namtae"
+---
