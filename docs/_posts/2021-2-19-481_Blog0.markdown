@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "CIT 481 Blog 0"
+date:   2021-2-19 11:59:25 -0700
+categories: jekyll blogs
+auther: "Namtae"
+---
+
+Hi, this is my blog 0.
+First, this is my final semester at CSUN with CIT major. During past winter break, I signed up for CodePath Cybersecurity Bootcamp and the bootcamp start in Spring 2021. 
+In this blog I would like to introduce a software called "<b>Burp Suite</b>"
+
+Burp Suite is a tool used for penetration testing of web broswer application and aim to be all in one set of tools. 
+<ul>The tools that Burp Suite offers are:
+	<li>Spider: uses for mapping the target web application to observed potential vulnerabilities</li>
+	<li>Proxy: contains intercepting proxy which allows the users to see and modify the contents of HTTP requests/respones and can be adjusted to run a specific loop-back ip and a port.</li>
+	<li>Intruder: uses to run a set of values through an input point which allows to brute-force its payload such as attacks forms, XSS, and SQL injecttion</li>
+	<li>Repeater: allows the users to send requests with manual modifications which it use for verifying value</li>
+	<li>Sequencer: checks for the randomness of tokens generate by webserver<li>
+	<li>Decoder: is a built-in tools to encode/decode value of parameters/headers like URL, HTML, Base 64, Hex, ASSCI and hash a value<li>
+	<li>Extender: enhance its capabilities by viewing, modifing, installing and uninstalling in extender window like browser extension</li>
+	<li>Scanner: uses to scan common vulnerabilities and lists them with information of that vulnerabilities</li>
+</ul>
+here is a like to download or learn more about Burp Suite <a href="https://portswigger.net/burp">Visit Burp Suite website</a>
+They offers Free Version (Community Edition), Profession ($399 per user/year) and Enterprise version ($3999 per year). 
+
+The most common tools that we use in Codepath Cybersecurity Bootcamp are Proxy, Intruder, Repeater, and Decoder 
+
+
