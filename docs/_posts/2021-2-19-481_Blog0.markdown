@@ -17,7 +17,7 @@ Burp Suite is a tool used for penetration testing of web broswer application and
 	<li>Intruder: uses to run a set of values through an input point which allows to brute-force its payload such as attacks forms, XSS, and SQL injecttion</li>
 	<li>Repeater: allows the users to send requests with manual modifications which it use for verifying value</li>
 	<li>Sequencer: checks for the randomness of tokens generate by webserver<li>
-	<li>Decoder: is a built-in tools to encode/decode value of parameters/headers like URL, HTML, Base 64, Hex, ASSCI and hash a value<li>
+	<li>Decoder: is a built-in tools to encode/decode value of parameters/headers like URL, HTML, Base 64, Hex, ASSCI and hash a value</li>
 	<li>Extender: enhance its capabilities by viewing, modifing, installing and uninstalling in extender window like browser extension</li>
 	<li>Scanner: uses to scan common vulnerabilities and lists them with information of that vulnerabilities</li>
 </ul>
