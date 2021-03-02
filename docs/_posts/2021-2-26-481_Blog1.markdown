@@ -14,21 +14,7 @@ XSS is a technique to inject Javascript into a website which allows them to stea
 Attackers can use XSS attacks to execute scripts in a victim's browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites. Anyone that can send data to the system, including administrators, are possible candidates for performing XSS attacks in an application. 
 
 Here is some XSS command
-<div>
-	<SCRIPT>
-	<a>alert('XSS')</a>
-	</SCRIPT>
-	<br>
-	<IMG SRC="#" ONERROR="
-	<a>alert('XSS')</a>
-	"/>
-	<br>
-	<INPUT TYPE="BUTTON" ONCLICK="
-	<a>alert('XSS')</a>
-	"/>
-	<br>
-	<IFRAME SRC="javascript:
-	<a>alert('XSS');</a>
-	"></IFRAME>
-	<br>
-</br>
+<ul>
+	<li><code><SCRIPT>alert('XSS')</SCRIPT></code></li>
+	<li><code><IFRAME SRC="javascript:alert('XSS');"></IFRAME></code></li>
+</ul>
