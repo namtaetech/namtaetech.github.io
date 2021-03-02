@@ -15,8 +15,8 @@ Attackers can use XSS attacks to execute scripts in a victim's browser which can
 
 Here is some XSS command
 <ul>
-	<li><code>'<SCRIPT>alert('XSS')</SCRIPT>'</code></li>
-	<li><code>'<IMG SRC="#" ONERROR="alert('XSS')"/>'</code></li>
-	<li><code>'<INPUT TYPE="BUTTON" ONCLICK="alert('XSS')"/>'</code></li>
-	<li><code>'<IFRAME SRC="javascript:alert('XSS');"></IFRAME>'</code></li>
+	<li><code><SCRIPT>alert('XSS')</SCRIPT></code></li>
+	<li><code><IMG SRC="#" ONERROR="alert('XSS')"/></code></li>
+	<li><code><INPUT TYPE="BUTTON" ONCLICK="alert('XSS')"/></code></li>
+	<li><code><IFRAME SRC="javascript:alert('XSS');"></IFRAME></code></li>
 </ul>
