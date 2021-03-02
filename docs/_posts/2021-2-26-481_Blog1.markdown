@@ -1,11 +1,22 @@
 ---
 layout: post
-title:  "CIT 481 Blog 1"
-date:   2021-2-26 11:59:25 -0700
+title:  "CIT 481 Blog 2"
+date:   2021-3-5 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
 
+<h2>Cross-site Scripting</h2>
+Cross-site scripting (XSS) is one of the most common and damaging vulnerabilities today. Even though web developers have known about it for years, it's still easy to let an XSS vulnerability slip through the cracks. The key thing that XSS is leveraging is that your browser keeps you logged in by storing cookies that can be used to authenticate you. For example, once you log into Facebook, you rarely have to authenticate with your password again.
 
+XSS is a technique to inject Javascript into a website which allows them to steal cookies or other private data or otherwise leverage the logged in session to act with your authority. The most common XSS attack is where a hacker sends you a <a href="#!exercises" onclick="alert('I just hacked you! Except if I really hacked you, I wouldn't show you this alert.')"">link (try clicking that link) to a site (like Facebook). As soon as you click on that link, you've been hacked.
 
+Attackers can use XSS attacks to execute scripts in a victim's browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites. Anyone that can send data to the system, including administrators, are possible candidates for performing XSS attacks in an application. 
 
+Here is some XSS command
+<ul>
+	<li><SCRIPT>alert('XSS')</SCRIPT></li>
+	<li><IMG SRC="#" ONERROR="alert('XSS')"/></li>
+	<li><INPUT TYPE="BUTTON" ONCLICK="alert('XSS')"/></li>
+	<li><IFRAME SRC="javascript:alert('XSS');"></IFRAME></li>
+</ul>
