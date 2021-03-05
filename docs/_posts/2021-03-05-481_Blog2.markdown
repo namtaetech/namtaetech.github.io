@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "CIT 481 Blog 2"
-date:   2021-3-5 11:59:25 -0700
+date:   2021-03-05 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+
+<h2>Cryptography</h2>
 
 
 
