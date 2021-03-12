@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "CIT 481 Blog 3"
+date:   2021-03-12 11:59:25 -0700
+categories: jekyll blogs
+auther: "Namtae"
+---
+
+<h2>Blog3</h2>
+
+
+
+
