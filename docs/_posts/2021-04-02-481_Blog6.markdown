@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "CIT 481 Blog 5"
-date:   2021-04-02 11:59:25 -0700
+title:  "CIT 481 Blog 6"
+date:   2021-04-09 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
@@ -9,10 +9,7 @@ auther: "Namtae"
 <p>In this blog, I'm going to take you on my journey of getting ready for COMPTIA security+ exam</p>
 
 <h2>Today's topic is Attacks (cont.)</h2>
-<p>Continue from last week topic, today we will go over more type of attacks</p>
-
-<h3>Application/Service Attacks</h3>
-<p>The application layer used to be unpopular target becuase there were too many different application, but vulerabilities are easily found everywhere now. The most common targets are Adobe Flash and Acrobat Application security controls and techniques are important in making sure that the application deployed are secure as much as possible.</p>
+<p>Continue from last week topic, today we will go over in depth of the types of Application/Service attacks</p>
 
 <h3>Types of Application/Service Attacks</h3>
 <ul>
@@ -38,9 +35,5 @@ auther: "Namtae"
     <li>MAC Spoofing</li>
     <li>IP Address Spoofing</li>
 </ul>
-
-<p>Next blog we are going to go in depth of the types of Application/Service Attacks, stay tune!</p>>
-
-
 
 

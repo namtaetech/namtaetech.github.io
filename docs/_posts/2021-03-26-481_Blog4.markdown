@@ -6,8 +6,25 @@ categories: jekyll blogs
 auther: "Namtae"
 ---
 
-<h2>Blog4</h2>
+<p>In this blog, I'm going to take you on my journey of getting ready for COMPTIA security+ exam</p>
 
+<h2>Today's topic is Attacks (cont.)</h2>
+<p>Continue from last week topic, today we will go over in depth of the types of Social Engineering attacks</p>
 
+<h3>Types of Social Engineering Attacks</h3>
+<ul>
+    <li>Phishing (or pronounched fishing) - an attacker attemp to obtain sensitive information from users such as username, password, credit card numbers, and details about users' bank account by masquerading as a trusted entity. The message often states that the user's account has been compromised and requests for security purposes.  </li>
+    <li>Spear Phising - is exactly like Phishing attack but it targets to a specific group woth something in common. </li>
+    <li>Whaling - is thus one where the target is a high-value person, such as CEO or CFO. It is custom-built to increase the odd of success. It doesn't attack multiple targets and hoping for a reply. </li>
+    <li>Vishing - a variation of phishing attack that users uses vocie communication technology to obtain the information the attacker is seeking. This type of attacks take advantage of trust that someone calls from a ligitamate place using Voice over IP (VoIP). The attackers are hoping to obtain sensitive information such as credit card numbers or other information that can be used in identity theft.</li>
+    <li>Tailgating - is simple tactic of following closely behind a person who has just used their own acces (ID card or PIN number) to gain physical access into a room or building. This type of attack techniques relys on poor security practices of an authorized user in order to be successful. </li>
+    <li>Impersonation - is a common social engineering technique and can be employed in many ways - over the phone, in person or online. The attacker assumes a role that is reconigzed by the person being attacked and in assuming that role, the attacker uses the potential victi's biases against their better judgment to follow procedures.</li>
+    <li>Dumpster Diving - is the process of going through a target's trash in hopesof finding valuable information that might be used in a penatraion attempt. Trash is no longer considered as a private property after it has been discarded</li>
+    <li>Shoulder Surfing - doesn't need to be involved direct contact with the target, but it involves the attacker directly observing the target entering sensitive information on a form, keypad or keyboard. The attacker may simply look over the shoulder of the target, or may setup a camera to view the target entering their information.</li>
+    <li>Hoax - it may not be a real security issue but if it cause s the user to take some sort of action that weakens security, that can be very damaning.</li>
+    <li>Watering Hole Attack - the concept of watering hole attack is simply like a hunter is waiting near a watering hole for an animal to come drink. An attacker can plant malware at a site where users are likely to visit. The typical attack vector will be zero day attack to avoid dection</li>
+</ul>
+
+<p>Next blog will talk about what another types of attacks, stay tune!</p>
 
 

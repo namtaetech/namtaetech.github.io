@@ -6,7 +6,23 @@ categories: jekyll blogs
 auther: "Namtae"
 ---
 
-<h2>Cryptography</h2>
+<p>In this blog, I'm going to take you on my journey of getting ready for COMPTIA security+ exam</p>
+
+<h2>Today's topic is Attacks</h2>
+<p>This chapter I will learn how to compare and contrast different types of attacks and the different types of attacks</p>
+<br>
+<h3>What is attacks</h3>
+<p>Attacks can happend in any level and/or layer of software from protocals to applications. An attacker will find a vulnerability in a system and exploits the weakness of the system. Then teh attacker will allow himself/herself into the system. The result of attacking can be varied because it depends on the attacker intension which it can be minor to severe and can be against the user, the application or the network. You might not know when you get an attack because the attacker is actually on a different system and the data that attacker will manipulate on the second system is obtaininged by attacking of the first system. </p>
+
+<p>Attacks on computer systems and networks can be grouped in two 2 categories</p>
+<ul>
+    <li><b>attacks on specific software</b> - such as an application or an operating system. These attacks is possible because of an oversight in the code or because of a flow or a bug in the code.</li>
+    <li><b>attacks on specific protocal or service</b> - These attacks are attemped to take advatage of a specific feature  of the protocals/services or in manner for which it was not intended. </li>
+</ul>
+
+<p>Next blog will talk about what type of attacks, stay tune!</p>
+
+
 
 
 

@@ -1,4 +1,4 @@
----
+. ---
 layout: post
 title:  "CIT 481 Blog 3"
 date:   2021-03-12 11:59:25 -0700
@@ -6,7 +6,37 @@ categories: jekyll blogs
 auther: "Namtae"
 ---
 
-<h2>Blog3</h2>
+<p>In this blog, I'm going to take you on my journey of getting ready for COMPTIA security+ exam</p>
+
+<h2>Today's topic is Attacks (cont.)</h2>
+<p>Continue from last week topic, today we will go over type of attacks</p>
+
+<h3>Social Engineering Methods</h3>
+<p><b>Social Engineering</b> is an attack against a user, typically it involves some form of social interation. This type of attack doesn't need to involve technical knowledge or security awareness. Social engineering at its heart involves manipulating the very socail nature of interpersonal relationships. It in essence preys on several charasteristics that we tend to desire.</p> 
+<p>For example,</p>
+<ul>
+    <li>You want to get in through a gate that need an ID to pass through, by arriving at the door at the same time as a person with ID card, carrying something on both hands, you probably can get them to open and hold the door for you.</li>
+    <li>By creating a hostlie situation, people tend to want to avoid hostility. By engaging into heated argument with someone in the group that you wish to join and make sure you are losing in the argument and make sure make it seems like unfair. You are instancely building a connection to those who has been similarly mistreated which play on sympathy and use that monent to bypass the connection moment. </li>
+</ul>
+<p>Also, a good Social Engineer need to understand how to use body language to influent others. By using body language to get a person to do something without directly asking them.</p>
+
+<p>This type of attack play to known stereotypical behavior. But not only watchout for the behavior, also watchout for the tools that used by social engineers - crying baby, flirting, or pizza delivery peron. We can be blined by those tools and exploit the weakness.</p>
+
+<h3>Types of Social Engineering Attacks</h3>
+<ul>
+    <li>Phising</li>
+    <li>Spear Phising</li>
+    <li>Whaling</li>
+    <li>Vishing</li>
+    <li>Tailgating</li>
+    <li>Impersonation</li>
+    <li>Dumpster Diving</li>
+    <li>Shoulder Surfing</li>
+    <li>Hoax</li>
+    <li>Watering Hole Attack</li>
+</ul>
+
+<p>Next blog we are going to go in depth of the types of Social Engineering Attacks, stay tune!</p>
 
 
 
