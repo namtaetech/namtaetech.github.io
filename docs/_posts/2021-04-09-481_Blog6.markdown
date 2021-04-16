@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "CIT 481 Blog 6"
+date:   2021-04-09 11:59:25 -0700
+categories: jekyll blogs
+auther: "Namtae"
+---
+
+<p>In this blog, I'm going to take you on my journey of getting ready for COMPTIA security+ exam</p>
+
+<h2>Today's topic is Attacks (cont.)</h2>
+<p>Continue from last week topic, today we will go over in depth of a couple type of Application/Service attacks</p>
+
+<h3>Types of Application/Service Attacks</h3>
+<ul>
+    <li>DoS - Denial-of-Service, the purpose of this attack can be  to prevent access to the target systems or can be used in conjunction with other actions to gain unthorized access to a computer or network. And it can expliot a vulnerability in a specific application, operating system or feature.</li>
+    <li>DDoS -Distributed Denial-of-Service is also deny th euse of or access to a specific service/system. It is a DoS attack that employing multiple attacking system unlike DoS that conducted using a single attacking system. They are systems that have been compromised and on which the DDoS attack software has been installed</li>
+    <li>Man-in-the-Middle - ocurred when an attacker be able to place himself/herself in the middle between hosts that is communicating. This attack is done by ensuring all communication going to/from the target host is routed through the attacker's host. The attacker can observe all the traffic between those hosts.</li>
+    <li>Buffer Overflow - the idea behind this is inputing buffer that is used to hold program input is overwritten with data that is larger than the buffer can hold. This vulnerability cause by two things: poor programming practice and programmin language weaknesses</li>
+    <li>Injection - </li>
+    <li>Cross-Site-Scripting</li>
+    <li>Zero Day</li>
+    <li>Replay</li>
+    <li>Pass the hash</li>
+    <li>Spoofing</li>
+    
+</ul>
+
+
