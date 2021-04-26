@@ -6,5 +6,99 @@ categories: jekyll blogs
 auther: "Namtae"
 ---
 
+This week I'm gonna go over how did I create a VPN network without open a port at the client side.
+
+<p>Or you can access the document with this link: https://docs.google.com/document/d/1jAg0QPvp_RnDkEx8TYvUsjHqn5MNsGsM12Qo8FqPEqc/edit?usp=sharing</p>
+<br>
+We need a VPS running in order to use free OpenVPN access server for free
+<br>
+I’m using Digital Ocean 
+<br>
+Setting up VPN server access on VPS 
+<br>
+Create droplet 
+<br>
+Select VPN server Access
+<br>
+
+
+Add ssh key to connect the server without putting in password, but if you don’t put in Digital Ocean will email use a root password and you can change it later
+<br>
+Then you will have something like this
+<br>
+Log in to your terminal with the IP address given (this will be IP of your VPS)
+<br>
+Login using ssh cmd
+<br>
+<code>
+$ ssh root@IP_address_of_your_server
+</code>
+Ex.			$ ssh root@157.245.129.45
+
+After logging in, it will have you setup the service 
+<code>Say YES on the accept agreement </code>
+Then you can just press <code>ENTER</code> for default setting
+<br>
+	    
+        Reset your root password by <br>
+	    <code>$ passwd root</code>
+		It will ask you to put a new password
+<br>
+Reset OpenVPN account by
+        
+        $ passwd openvpn 
+        
+To log in on GUI interface of OpenVPN server/client 
+Admin:		https:// IP address of your VPS server:943/admin
+https://157.245.129.45:943/admin
+
+	At username put	“openvpn”
+	At password put 	“your password that your recreate”
+by using cmd $passwd openvpn earlier
+
+
+Troubleshooting 
+		If the GUI OpenVPN is not run
+		Run 		$ /usr/local/openvpn_as/bin/ovpn-init
+		Then put	DELETE
+
+Setting up users 
+
+    Go under “user management” at the tool menu on the left of the page 
+    Then select “user permission” 
+
+For Regular users 
+
+    Enter new username in the “new username” box
+    Then check on Allow Auto-login box, so we don’t need to put in password 
+    Then click at more settings to enter password to login and get the client file and leave everything as default 
+
+For Gateway users
+
+    Follow the same steps as user but change a couple setting 
+    And follow the setting down below
+
+At VPN gateway the address that we put is the address of your private network that you connect this client gateway to 
+
+Running the server
+After setup all the user
+We will download config file by logging in at
+	Client:		https:// IP address of your VPS server:943/
+https://157.245.129.45:943/
+
+	Put in your username and password that we create in user management 
+
+
+
+After login download config file at the button “Yourself (auto-login profile) if you set as auto-login in the setting. If not the GUI interface have option for you
+
+
+Run the config file 
+*make sure on the machine have openvpn software
+			$ sudo apt-get install openvpn 
+Using the cmd 
+			$ openvpn --config /location_of_yourfile/ name_of_the_config file
+Ex. 			$ openvpn --config /home/pi/openvpn/client.ovpn
+
 
 
