@@ -5,6 +5,39 @@ date:   2021-05-07 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+Today I'm gonna go over how to setup a <b>DogeCoin</b> Miner
+<p>Why I chose Dogecion because it is the easiest and I'm a rookie in this cryptocurrency. Some other cryptocurrency require more equipments than I can affort.</p>
+
+<h3>What you need?</h3>
+<ul>
+    <li>DogeCoin Wallet</li>
+    <li>A staple and dependent internet connection</li>
+    <li>Mining Software</li>
+Options
+    <li>Isolate place - keep in mind, depend on how you set up your rig, it can be loud</li>
+    <li>Cooling Equipment - because you will need to run your rig 24/7, your rig can be over heated</li>
+</ul>    
+
+<h3>Let's do it!</h3>
+<h4>DogeCoin Wallet</h4>
+<p>1. Download DogeCoin wallet: https://dogecoin.com/ Once you download it and it will provide a wallet address, keep it mind you will need to use that address multiple time in the setup process</p>
+<h4>A staple and dependent internet connection</h4>
+<p>2. I selected to do on my MAC computer so I will be running all the command on MAC. So make sure that the computer that you want to use mining is connect to internet</p>
+<h4>Mining Software</h4>
+<p>3. Now I need to setup a miner. I donwload this Miner software: https://www.mediafire.com/file/4ye8d4znffa25m6/Dogecoin_Miner_Youtube.zip/file
+<br>
+After extract the file, Go to DogeCoin Miner Youtube > DogeCoin Miner > select START.bat file and open with text editor. Then look for "-wal DOGE:<code>DOGECOIN</code>", replace <b>DOGECOIN</b> with your DogeCoin address from DogeCoin wallet that you download earlier. After you make the chage save the file or Ctrl+S</p>
+<p>Then close the START.bat file and run the file by <code>Double click</code> on the START.bat file</p>
+<p>Next go to https://unmineable.com/coins/DOGE and in the page it should have a section say <b>Enter your address to check your stats:</b> enter your DogeCoin address from DogeCoin wallet. And it should show how much you are getting the DogeCoin</p>
+PS. you will need to leave the START.bat window open for all time.
+
+<br>
+Here is a video tutorial that I followed: https://youtu.be/87e2VBkBahs
+
+
+
+
+
 
 
 

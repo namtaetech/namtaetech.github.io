@@ -5,7 +5,25 @@ date:   2021-04-30 11:59:25 -0700
 categories: jekyll blogs
 auther: "Namtae"
 ---
+<p>I'm planing to build a cyptocurrency miner, so before I do that I need to learn what is cyptocurrency and how it works.</p>
+<h3>What is Cyptocurrency?</h3>
+<p>Crytocurrency is a digital currency that is encrypted by crytography and decentralized. And the electronic payment system based on Cyptographic proof instead of trust which comes in the form if transactions that are verified and recorded in a form of program called a <b>blockchain</b></p>
 
+<br>
 
+<h3>Advantages and Disadvantages</h3>
+<h4>Advantages</h4>
+<p>This cryptocurrencies are systems that allow for secure payments online. It makes easier to transfer funds directly between 2 parties without the need for a trusted 3rd party like bank. These transfers are instead secured by the use of public keys and private keys and other different forms of incentive systems like proof of work and proof of stake.</p>
+<h4>Disadvantages</h4>
+<p>Cryptocurrency Transactions makes it suited  for a host of illegal activities such as laundring money and tax evasion</p>
 
+<br>
+
+<h3>What is blockchain?</h3>
+<p>When you hear blockchain, it seems complicated but the concept is quite simple. A blockchain is a type of database. But one thing that blockchain is difference than database is the way how data is structured. It collects information together in a group as a block that hold sets of information. Blocks have certain storage capacities and, when filled, are chained onto the previously filled block, forming a chain of data known as the “blockchain.” All new information that follows that freshly added block is compiled into a newly formed block that will then also be added to the chain once filled. When the blocks are filled it set in stone and becomes a part of the timeline and each block is given exact time stamp when it's added to the chain.</p>
+<h4>Dose it secure?</h4>
+<p>Each block contains its own hash along with the hash of previous blog also timestamp. First, new blocks are always stored linearly and chronologically Also, they are always added to the “end” of the blockchain. If a hacker wants to alter the blockchain and steal Bitcoin or other cryptocurrency from everyone else. If they were to alter their own single copy, it would no longer align with everyone else's copy. When everyone else cross-references their copies against each other, they would see this one copy stand out and that hacker's version of the chain would be cast away as illegitimate. </p>
+
+<br>
+With next blog I'm gonna provide step by step how to setup a miner. 
 
